@@ -1,10 +1,6 @@
 # Is-it-hard-to-find-love-in-Singapore
 
-Runtime disconnected
-NLP_youtube_comment.ipynb
-NLP_youtube_comment.ipynb_
-Is it hard to find love in Singapore ?
-Project Objective :
+## Project Objective :
 Despite having more opportunities to meet people, the age at which Singaporeans are getting hitched continues to rise.
 
 As of 2020, the median age of first-time grooms in Singapore was 30.4 years old and 28.8 years old for first-time brides. While this had remained relatively constant for men since 2011, the median age of marriage for women had been increasing, indicating a trend amongst Singaporean women in delaying marriage.
@@ -13,10 +9,10 @@ According to an interview done by TODAY, singles aged between 20 and 35 said tha
 
 So, the main question of this project is to determine: Is it hard to find love in Singapore ?
 
-Project Overview :
+## Project Overview :
 In this project, we will explore multiple machine learning models like Naive Bayes and Support Vector Machine Classifier (SVM), and vectorization strategies to identify the one that performs the best.
 
-Dataset Description :
+## Dataset Description :
 The dataset consists of 211 data extracted from the comments of a youtube video.
 
 There are 3 columns in this dataset:
@@ -28,7 +24,7 @@ Data Source: Is it hard to find love in Singapore? | Mothership Hits The Streets
 
 Video URL: https://www.youtube.com/watch?v=4Bfec3zlujU
 
-Extract the comment of the youtube video as our datasource
+## Extract the comment of the youtube video as our datasource
 [ ]
 function scrapeCommentsWithReplies(){
   var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -75,7 +71,7 @@ newSheet.getRange(1, 1,result.length,9).setValues(result)
 
 }
 
-Import Packages and Load Dataset
+## Import Packages and Load Dataset
 [54]
 3s
 # Import packages
@@ -84,37 +80,30 @@ import pandas as pd
 import numpy as np
 from pywaffle import Waffle
 import matplotlib.pyplot as plt
-Requirement already satisfied: pywaffle in /usr/local/lib/python3.7/dist-packages (0.6.4)
-Requirement already satisfied: matplotlib in /usr/local/lib/python3.7/dist-packages (from pywaffle) (3.2.2)
-Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->pywaffle) (2.8.2)
-Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->pywaffle) (3.0.7)
-Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.7/dist-packages (from matplotlib->pywaffle) (0.11.0)
-Requirement already satisfied: numpy>=1.11 in /usr/local/lib/python3.7/dist-packages (from matplotlib->pywaffle) (1.21.5)
-Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->pywaffle) (1.3.2)
-Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil>=2.1->matplotlib->pywaffle) (1.15.0)
+
 [56]
-9s
+
 # Load data
 from google.colab import files
 uploaded = files.upload()
 
 [57]
-0s
+
 df = pd.read_csv('youtube_comment.csv')
 df.head()
 
 [58]
-0s
+
 df = df.drop(["Word","Name"], axis=1)
 df.head()
 
 [59]
-0s
+
 len(df)
-210
-Data Cleaning
+
+## Data Cleaning
 [60]
-0s
+
 # Detect and remove NaN values 
 df.isnull().sum()
 Comment    0
