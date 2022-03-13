@@ -2,7 +2,6 @@
 
 ![image](https://user-images.githubusercontent.com/86367657/158003302-d3dfc04d-9ee9-427e-96a2-0d4faebc29e4.png)
 
-
 ## Project Objective :
 Despite having more opportunities to meet people, the age at which Singaporeans are getting hitched continues to rise.
 
@@ -13,10 +12,14 @@ According to an interview done by TODAY, singles aged between 20 and 35 said tha
 So, the main question of this project is to determine: Is it hard to find love in Singapore ?
 
 ## Project Overview :
-In this project, we will explore multiple machine learning models like Naive Bayes and Support Vector Machine Classifier (SVM), and vectorization strategies to identify the one that performs the best.
+#### The Training Process :
+In the training process, our VADER Sentiment Analysis model learns to associate a particular input (i.e. a comment) to the corresponding output (tag) based on the test samples used for training. The feature extractor transfers the text input into a feature vector. Pairs of feature vectors and tags (e.g. positive or negative) are fed into the machine learning algorithm to generate a model.
+
+#### The Prediction Process :
+In the prediction process, we explored vectorization strategies and multiple classification models like Naïve Bayes and Support Vector Machine Classifier (SVM) to identify the model that performs the best. In this case, the feature extractor is used to transform unseen text inputs into feature vectors. These feature vectors are then fed into the classification model, which generates predicted tags (eg. positive or negative).
 
 ## Dataset Description :
-The dataset consists of 211 data extracted from the comments of a youtube video.
+The dataset consists of 210 data extracted from the comments of a youtube video.
 
 There are 3 columns in this dataset:
 
