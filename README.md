@@ -22,7 +22,6 @@ In the prediction process, we explored vectorization strategies and multiple cla
 The dataset consists of 210 data extracted from the comments of a youtube video.
 
 There are 3 columns in this dataset:
-
 Name: the name of the youtube user who commented the video
 Comments: the text of the comment
 Likes: the number of likes of the comment
