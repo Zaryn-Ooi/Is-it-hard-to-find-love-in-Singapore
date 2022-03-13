@@ -26,6 +26,8 @@ There are 3 columns in this dataset:
 - Name: the name of the youtube user who commented the video
 - Comments: the text of the comment
 - Likes: the number of likes of the comment
-- 
+
+
 Data Source: Is it hard to find love in Singapore? | Mothership Hits The Streets
+
 Video URL: https://www.youtube.com/watch?v=4Bfec3zlujU
