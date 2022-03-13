@@ -16,7 +16,10 @@ So, the main question of this project is to determine: Is it hard to find love i
 In the training process, our VADER Sentiment Analysis model learns to associate a particular input (i.e. a comment) to the corresponding output (tag) based on the test samples used for training. The feature extractor transfers the text input into a feature vector. Pairs of feature vectors and tags (e.g. positive or negative) are fed into the machine learning algorithm to generate a model.
 
 #### The Prediction Process :
-In the prediction process, we explored vectorization strategies and multiple classification models like Naïve Bayes and Support Vector Machine Classifier (SVM) to identify which model performs the best. In this case, the feature extractor is used to transform unseen text inputs into feature vectors. These feature vectors are then fed into the classification model, which generates predicted tags (eg. positive or negative).
+In the prediction process, we explored vectorization strategies and multiple classification models like Naïve Bayes and Support Vector Machine Classifier (SVM). In this case, the feature extractor is used to transform unseen text inputs into feature vectors. These feature vectors are then fed into the classification model, which generates predicted tags (eg. positive or negative).
+
+#### The Cross Validation Process :
+In the cross validation process, we aim to improve the accuracy of our current model by Parameter estimation using GridSearch technique. From this process, we are able to determine which model can best predict the tags. 
 
 ## Dataset Description :
 The dataset consists of 210 data extracted from the comments of a youtube video.
